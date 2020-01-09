@@ -7,6 +7,182 @@
   <title>Мишка</title>
 </head>
 <body>
+  <div class="modal">
+    <h2 class="modal__title">Добавить в корзину</h2>
+    <p class="modal__text">Выберите размер:</p>
+    <ul class="modal__size-list">
+      <li>
+        <input class="modal__input" type="radio" name="size-S" id="size-S">
+        <label class="modal__label" for="size-S">S</label>
+      </li>
+      <li>
+        <input class="modal__input" type="radio" name="size-M" id="size-M">
+        <label class="modal__label" for="size-M">M</label>
+      </li>
+      <li>
+        <input class="modal__input" type="radio" name="size-L" id="size-L">
+        <label class="modal__label" for="size-L">L</label>
+      </li>
+    </ul>
+    <button type="submit">Добавить</button>
+  </div>
 
+  <header class="page-header">
+    <div class="page-header__top">
+      <div class="page-header__logo">
+        <a>
+          <img src="#" alt="Логотип магазина 'Mishka'">
+        </a>
+      </div>
+      <nav class="main-nav">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item">
+            <a href="#">Каталог товаров</a>
+          </li>
+          <li class="site-list__item">
+            <a href="#">Вязание на заказ</a>
+          </li>
+        </ul>
+        <div class="search-and-cart site-list">
+          <form class="search__form site-list__item">
+            <input class="search__input" type="search" value="Поиск по сайту">
+          </form>
+          <div class="cart site-list__item">
+            <a href="#">
+              <span class="cart__name">Корзина: </span><span class="cart__volume">пока пуста</span>
+            </a>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div class="page-header__bottom">
+      <h1 class="main-header">Милые штуки ручной работы для дома</h1>
+      <ul class="catalog-links">
+        <li class="catalog-links__item">
+          <a href="#"></a>
+        </li>
+        <li class="catalog-links__item">
+          <a href="#"></a>
+        </li>
+      </ul>
+    </div>
+  </header>
+
+  <main class="page-main">
+    <section class="promo">
+      <h2 class="section-title promo__title">Вязаные корзинки</h2>
+      <b class="promo__subtitle">Товар недели</b>
+      <p class="promo__description">
+        Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и трех размерах.
+      </p>
+      <table class="promo__data">
+        <tr>
+          <th>Цвет:</th>
+          <td>"Тиффани"/серый</td>
+        </tr>
+        <tr>
+          <th>Диаметр:</th>
+          <td>25 см</td>
+        </tr>
+        <tr>
+          <th>Высота:</th>
+          <td>15 см</td>
+        </tr>
+      </table>
+      <img class="promo__image" src="#" alt="Фото товара недели">
+      <b class="promo__price">990 руб.</b>
+      <a class="btn" href="#">Заказать</a>
+    </section>
+
+    <section class="features">
+      <h2 class="section-title">Коротко о нас:</h2>
+      <ul class="features__list">
+        <li class="features__item">
+          Экологически чистые материалы
+        </li>
+        <li class="features__item">
+          Скандинавский стиль по российской цене
+        </li>
+        <li class="features__item">
+          Увеличивает лайки на фотографиях
+        </li>
+        <li class="features__item">
+          Связано вручную с любовью и умилением
+        </li>
+        <li class="features__item">
+          Поддержка отечественного производителя
+        </li>
+        <li class="features__item">
+          Поставляется в подарочной упаковке
+        </li>
+      </ul>
+    </section>
+
+    <section class="reviews">
+      <h2 class="section-title">Отзывы</h2>
+      <ul class="reviews__list slider">
+        <li class="reviews__item slider__item">
+          <blockquote class="review">
+            <p class="review__text">
+              Я молодая мама, но всё равно фотографии не набирали и близко
+              такого количества лайков, как у популярных инстамамочек. В
+              отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои
+              фотографии сразу стали более стильными, а также набирают
+              больше лайков!
+            </p>
+            <cite class="review__author">
+              <span class="review__author-name">Анастасия Красильникова</span>
+              <span class="review__author-nickname">@misssssiskras</span>
+            </cite>
+          </blockquote>
+        </li>
+      </ul>
+      <div class="slider-controls">
+        <button class="slider__btn slider__btn--prev">Предыдущий</button>
+        <button class="slider__btn slider__btn--next">Следующий</button>
+      </div>
+      <a class="btn" href="#">Написать</a>
+    </section>
+  </main>
+
+  <footer class="page-footer">
+    <div class="page-footer__top contacts">
+      <h3 class="contacts__title">Контакты</h3>
+      <div class="contacts__data">
+        <div class="contacts__email">
+          <span>e-mail:</span><a class="contacts__link" href="#">info@mimimishkashop.ru</a>
+        </div>
+        <address class="contacts__address">
+          <span>Адрес:</span>
+          <p>
+            г. Санкт-Петербург,
+            ул. Большая Конюшенная,
+            д. 19/8, офис 101
+          </p>
+        </address>
+      </div>
+      <div class="contacts__map"></div>
+      <a class="btn" href="#">Напишите нам</a>
+    </div>
+    <div class="page-footer__bottom">
+      <div class="social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--instagram" href="#">Instagram</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href="#">Facebook</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--twitter" href="#">Twitter</a>
+          </li>
+        </ul>
+      </div>
+      <div class="copyright">
+        <span class="copyright-text">Разработано</span>
+        <a class="copyright__link" href="#">HTML Academy</a>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
