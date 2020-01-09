@@ -7,6 +7,130 @@
   <title>Мишка</title>
 </head>
 <body>
+  <div class="modal">
+    <h2 class="modal__title">Добавить в корзину</h2>
+    <p class="modal__text">Выберите размер:</p>
+    <ul class="modal__size-list">
+      <li>
+        <input class="modal__input" type="radio" name="size-S" id="size-S">
+        <label class="modal__label" for="size-S">S</label>
+      </li>
+      <li>
+        <input class="modal__input" type="radio" name="size-M" id="size-M">
+        <label class="modal__label" for="size-M">M</label>
+      </li>
+      <li>
+        <input class="modal__input" type="radio" name="size-L" id="size-L">
+        <label class="modal__label" for="size-L">L</label>
+      </li>
+    </ul>
+    <button type="submit">Добавить</button>
+  </div>
 
+  <header class="page-header">
+    <div class="page-header__top">
+      <div class="page-header__logo">
+        <a>
+          <img src="#" alt="Логотип магазина 'Mishka'">
+        </a>
+      </div>
+      <nav class="main-nav">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item">
+            <a href="#">Каталог товаров</a>
+          </li>
+          <li class="site-list__item">
+            <a href="#">Вязание на заказ</a>
+          </li>
+        </ul>
+        <div class="search-and-cart site-list">
+          <form class="search__form site-list__item">
+            <input class="search__input" type="search" value="Поиск по сайту">
+          </form>
+          <div class="cart site-list__item">
+            <a href="#">
+              <span class="cart__name">Корзина: </span><span class="cart__volume">пока пуста</span>
+            </a>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page-main">
+    <section class="catalog">
+      <h1 class="catalog__title"></h1>
+      <ul class="catalog__list">
+        <li class="catalog__item item-card">
+          <img class="item-card__image" src="#" alt="#">
+          <div class="item-card__description">
+            <h3 class="item-card__title">Зайчик-попрыгайчик</h3>
+            <p class="item-card__text">
+              Рост 30 см, вес 200 г
+            </p>
+            <b class="item-card__price">1 200 руб.</b>
+            <a class="item-card__btn" href="#">В корзину</a>
+          </div>
+        </li>
+        <li class="catalog__item">
+          <img class="item-card__image" src="#" alt="#">
+          <div class="item-card__description">
+            <h3 class="item-card__title">Корзинка для белья</h3>
+            <p class="item-card__text">
+              Диаметр 15 см, высота 10 см
+            </p>
+            <b class="item-card__price">690 руб.</b>
+            <a class="item-card__btn" href="#">В корзину</a>
+          </div>
+        </li>
+        <li class="catalog__item">
+          <img class="item-card__image" src="#" alt="#">
+          <div class="item-card__description">
+            <h3 class="item-card__title">Большая корзинка для игрушек</h3>
+            <p class="item-card__text">
+              Диаметр 30 см, высота 30 см
+            </p>
+            <b class="item-card__price">1 500 руб.</b>
+            <a class="item-card__btn" href="#">В корзину</a>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <section class="production">
+      <h2 class="production__title">Процесс производства</h2>
+      <figure class="production__video"></figure>
+      <p class="production__text">
+        По просьбам наших
+        любимых фолловеров мы
+        сняли для вас подробное
+        видео о том, как появляются
+        наши товары.
+      </p>
+      <a class="production__btn" href="#">Сделать заказ</a>
+    </section>
+  </main>
+
+  <footer class="page-footer">
+    <div class="wrapper">
+      <div class="social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--instagram" href="#">Instagram</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href="#">Facebook</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--twitter" href="#">Twitter</a>
+          </li>
+        </ul>
+      </div>
+      <div class="copyright">
+        <span class="copyright-text">Разработано</span>
+        <a class="copyright__link" href="#">HTML Academy</a>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
