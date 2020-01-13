@@ -1,8 +1,17 @@
+.review,
+.review__text {
+  margin: 0;
+}
+
 .review__text,
 .review__author-nickname {
   font-family: "Opensans", "Arial", "Helvetica", sans-serif;
   line-height: 30px;
   color: @grey-color;
+}
+
+.review__author {
+  font-style: normal;
 }
 
 .review__author-name {
@@ -15,6 +24,10 @@
 }
 
 @media (min-width: @tablet-width) {
+  .review__text {
+    font-size: 17px;
+  }
+
   .review__author-name {
     display: block;
   }
