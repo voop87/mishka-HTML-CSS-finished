@@ -1,3 +1,6 @@
+.main-nav__additional-links {
+  display: none;
+}
 
 @media (min-width: @tablet-width) {
   .main-nav {
@@ -8,5 +11,33 @@
     position: absolute;
     top: 60px;
     left: -285px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-nav {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .main-nav,
+  .main-nav__list {
+    position: static;
+  }
+
+  .main-nav__additional-links {
+    position: absolute;
+    top: 50px;
+    left: 0;
+
+    .no-style();
+    display: flex;
+  }
+
+  .main-nav__additional-link {
+    text-decoration: none;
+    color: #000000;
   }
 }
