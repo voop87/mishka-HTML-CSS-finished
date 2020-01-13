@@ -2,7 +2,7 @@
 .review__author-nickname {
   font-family: "Opensans", "Arial", "Helvetica", sans-serif;
   line-height: 30px;
-  color: #444444;
+  color: @grey-color;
 }
 
 .review__author-name {
@@ -12,4 +12,10 @@
 
 .review__author-nickname {
   line-height: 20px;
+}
+
+@media (min-width: @tablet-width) {
+  .review__author-name {
+    display: block;
+  }
 }

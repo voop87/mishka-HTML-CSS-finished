@@ -1,17 +1,22 @@
 .promo__subtitle {
   font-size: 17px;
-  color: #63d1bb;
+  color: @green-color;
 }
 
 .promo__description,
 .promo__data {
   font-family: "Opensans", "Arial", "Helvetica", sans-serif;
   line-height: 24px;
-  color: #444444;
+  color: @grey-color;
 }
 
 .promo__data {
   line-height: 20px;
+}
+
+.promo__data th {
+  font-weight: normal;
+  text-align: left;
 }
 
 .promo__image {
@@ -19,7 +24,38 @@
 }
 
 .promo__price {
+  display: block;
+
   font-size: 17px;
   line-height: 24px;
-  color: #444444;
+  color: @grey-color;
+}
+
+@media (min-width: @tablet-width) {
+  .promo {
+    position: relative;
+
+    min-height: 530px; //временно
+  }
+
+  .promo__flex-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .promo__half-width {
+    width: 290px;
+  }
+
+  .promo__description {
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  .promo__image {
+    position: absolute;
+    top: 96px;
+    right: 0;
+  }
 }

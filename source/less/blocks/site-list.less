@@ -5,9 +5,28 @@
 .site-list__item {
   font-size: 17px;
   line-height: 24px;
+}
 
-  & a {
-    text-decoration: none;
-    color: #000000;
+.site-list__link {
+  padding-left: 70px;
+
+  text-decoration: none;
+  color: #000000;
+}
+
+@media (min-width: @tablet-width) {
+  .site-list {
+    display: flex;
+  }
+
+  .site-list__item {
+    width: 185px;
+
+    font-size: 15px;
+  }
+
+  .site-list__link {
+    display: block;
+    padding: 0;
   }
 }

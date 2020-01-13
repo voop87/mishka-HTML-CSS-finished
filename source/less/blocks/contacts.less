@@ -1,5 +1,55 @@
 .contacts__data {
   font-family: "Opensans", "Arial", "Helvetica", sans-serif;
   line-height: 30px;
-  color: #444444;
+  color: @grey-color;
+}
+
+.contacts__map {
+  min-height: 465px;
+}
+
+.contacts__static-map {
+  height: 457px;
+
+  background-color: #f1f1f1;
+  background-image: url("../img/map-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: 322px 457px;
+}
+
+@media (min-width: @tablet-width) {
+  .contacts__title {
+    max-width: 570px;
+  }
+
+  .contacts__data {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .contacts__email,
+  .contacts__address {
+    width: 50%;
+  }
+
+  .contacts__address {
+    display: flex;
+    flex-wrap: wrap;
+
+    & p {
+      width: 225px;
+    }
+  }
+
+  .contacts__static-map {
+    background-image: url("../img/map-tablet@1x.jpg");
+    background-size: 768px 457px;
+  }
+
+  .contacts__btn {
+    display: block;
+    width: 200px;
+    margin: 0 auto;
+  }
 }

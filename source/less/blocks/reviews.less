@@ -1,3 +1,22 @@
 .reviews__list {
   .no-style();
 }
+
+@media (min-width: @tablet-width) {
+  .reviews {
+    position: relative;
+
+    min-height: 457px;
+
+    background-image: url("../img/review@1x.jpg");
+    background-repeat: no-repeat;
+    background-size: 350px 457px;
+    background-position: 0 0;
+  }
+
+  .reviews__btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}
