@@ -20,3 +20,48 @@
   line-height: 24px;
   color: @grey-color;
 }
+
+@media (min-width: @tablet-width) {
+  .production {
+    margin-top: 20px;
+  }
+
+  .production__flex-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .production__video {
+    order: -1;
+    height: 455px;
+
+    background-image: url("../img/video-tablet@1x.jpg");
+    background-size: 668px 455px;
+  }
+
+  .production__btn {
+    width: 584px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .production {
+    position: relative;
+
+    min-height: 455px;
+  }
+
+  .production__flex-wrapper {
+    width: 367px;
+    margin-left: 683px;
+  }
+
+  .production__video {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 668px;
+  }
+}

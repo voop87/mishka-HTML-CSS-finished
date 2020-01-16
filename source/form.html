@@ -9,34 +9,47 @@
 </head>
 <body>
   <header class="page-header">
-    <div class="page-header__logo">
-      <a href="index.html">
-        <img src="img/logo-mobile.svg" width="85.589" height="35.034" alt="Логотип магазина 'Mishka'">
-      </a>
-    </div>
-    <button class="page-header__menu-toggle" onclick="showMenu()" type="button">
-      <span class="visually-hidden">Открыть меню</span>
-    </button>
-    <nav class="main-nav">
-      <ul class="main-nav__list site-list">
-        <li class="site-list__item">
-          <a href="catalog.html">Каталог товаров</a>
-        </li>
-        <li class="site-list__item">
-          <a>Вязание на заказ</a>
-        </li>
-      </ul>
+    <div class="page-header__wrapper">
+      <div class="page-header__logo">
+        <a href="index.html">
+          <img src="img/logo-mobile.svg" width="85.589" height="35.034" alt="Логотип магазина 'Mishka'">
+        </a>
+      </div>
+      <button class="page-header__menu-toggle" onclick="showMenu()" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+      <nav class="main-nav">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item">
+            <a class="site-list__link" href="catalog.html">Каталог товаров</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link">Вязание на заказ</a>
+          </li>
+          <li class="site-list__item site-list__info">
+            Бесплатная доставка по России
+          </li>
+        </ul>
+      </nav>
       <div class="search-and-cart site-list">
         <form class="search site-list__item">
-          <input class="search__input" type="search" value="Поиск по сайту">
+          <input class="search__input" type="search" id="search" value="Поиск по сайту">
         </form>
         <div class="cart site-list__item">
-          <a href="#">
+          <a class="cart__link site-list__link" href="#">
             <span class="cart__name">Корзина: </span><span class="cart__volume">пока пуста</span>
           </a>
         </div>
       </div>
-    </nav>
+      <ul class="main-nav__additional-links">
+        <li>
+          <a class="main-nav__additional-link" href="#">Новые поступления</a>
+        </li>
+        <li>
+          <a class="main-nav__additional-link" href="#">Распродажа</a>
+        </li>
+      </ul>
+    </div>
   </header>
 
   <main class="page-main">
@@ -128,7 +141,12 @@
   </main>
 
   <footer class="page-footer">
-    <div class="wrapper">
+    <div class="page-footer__flex-wrapper wrapper">
+      <div class="page-footer__logo">
+        <a href="index.html">
+          <img src="img/logo-footer.svg" width="85.589" height="35.034" alt="Логотип магазина 'Mishka'">
+        </a>
+      </div>
       <div class="page-footer__social social">
         <ul class="social__list">
           <li class="social__item">
