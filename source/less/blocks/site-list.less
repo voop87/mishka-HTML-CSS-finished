@@ -14,13 +14,17 @@
   color: #000000;
 }
 
+.site-list__info {
+  display: none;
+}
+
 @media (min-width: @tablet-width) {
   .site-list {
     display: flex;
   }
 
   .site-list__item {
-    width: 185px;
+    width: 167px;
 
     font-size: 15px;
   }
@@ -28,5 +32,28 @@
   .site-list__link {
     display: block;
     padding: 0;
+  }
+
+  .site-list__info {
+    display: block;
+    width: 334px;
+
+    font-family: "Opensans", "Arial", "Helvetica", sans-serif;
+    color: @grey-color;
+    text-align: right;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .site-list__item {
+    font-size: 17px;
+  }
+
+  .site-list__info {
+    position: absolute;
+    top: 50px;
+    right: 0;
+
+    font-size: 15px;
   }
 }

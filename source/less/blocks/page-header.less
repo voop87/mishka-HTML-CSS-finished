@@ -2,16 +2,19 @@
   text-align: center;
 }
 
-.page-header__info {
-  display: none;
-}
-
 @media (min-width: @tablet-width) {
   .page-header {
     min-height: 50px;
-    display: flex;
 
     border-bottom: 1px solid #e7e7e7;
+  }
+
+  .page-header__wrapper {
+    position: relative;
+
+    display: flex;
+    width: 670px;
+    margin: 0 auto;
   }
 
   .page-header__logo {
@@ -20,13 +23,6 @@
 
   .page-header__menu-toggle {
     display: none;
-  }
-
-  .page-header__info {
-    display: block;
-
-    font-family: "Opensans", "Arial", "Helvetica", sans-serif;
-    color: @grey-color;
   }
 }
 
@@ -37,15 +33,13 @@
     width: 100%;
   }
 
+  .page-header__wrapper {
+    width: 1050px;
+  }
+
   .page-header__logo {
     position: absolute;
     top: 0;
     left: 500px;
-  }
-
-  .page-header__info {
-    position: absolute;
-    top: 50px;
-    right: 0;
   }
 }
