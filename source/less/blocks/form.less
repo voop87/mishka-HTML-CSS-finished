@@ -2,9 +2,17 @@
   .no-style();
 }
 
+.form__wrapper {
+  background-color: #f1f1f1;
+}
+
 .form__title {
+  width: 320px;
+  margin: 0 auto;
+
   font-size: 27px;
   line-height: 30px;
+  text-align: center;
 }
 
 .form__description {
@@ -29,6 +37,8 @@
 .form__input,
 .form__label,
 .form__textarea {
+  box-sizing: border-box;
+
   font-size: 17px;
   line-height: 18px;
 }
@@ -55,4 +65,49 @@
   font-size: 14px;
   line-height: 16px;
   color: @grey-color;
+}
+
+@media (min-width: @tablet-width) {
+  .form__fieldset--grey {
+    background-color: #f1f1f1;
+  }
+
+  .form__fieldset .wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .form__title {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .form__description,
+  .form__text {
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  .form__legend {
+    width: 167px;
+  }
+
+  .form__legend + ul,
+  .form__legend + input,
+  .form__legend + textarea {
+    width: 500px;
+  }
+
+  .form__input,
+  .form__label,
+  .form__textarea {
+    font-size: 19px;
+  }
+
+  .form__flex-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+  }
 }
