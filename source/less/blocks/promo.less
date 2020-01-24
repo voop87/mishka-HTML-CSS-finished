@@ -2,6 +2,11 @@
   position: relative;
 }
 
+.promo__title {
+  margin-top: 26px;
+  margin-bottom: 6px;
+}
+
 .promo__subtitle {
   font-size: 17px;
   color: @green-color;
@@ -15,25 +20,56 @@
   color: @grey-color;
 }
 
-.promo__data {
-  line-height: 20px;
+.promo__description {
+  margin: 22px 0;
 }
 
-.promo__data th {
-  font-weight: normal;
-  text-align: left;
+.promo__data {
+  line-height: 20px;
+
+  & tr {
+    display: block;
+    margin-left: -5px;
+    padding-bottom: 7px;
+
+    border-bottom: 1px solid #ececec;
+  }
+
+  & tr:not(:first-child) {
+    padding-top: 6px;
+  }
+
+  & th {
+    width: 96px;
+    padding: 0;
+
+    font-weight: normal;
+    text-align: left;
+  }
+
+  & td {
+    width: 164px;
+  }
 }
 
 .promo__image {
+  margin-top: 26px;
+
   background-color: #f1f1f1;
 }
 
 .promo__price {
   display: block;
+  margin-top: 20px;
 
   font-size: 17px;
   line-height: 24px;
+  text-align: center;
   color: @grey-color;
+}
+
+.promo__btn {
+  margin-top: 26px;
 }
 
 @media (min-width: @tablet-width) {
