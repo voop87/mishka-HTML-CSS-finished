@@ -33,7 +33,10 @@
       </nav>
       <div class="search-and-cart site-list">
         <form class="search site-list__item">
-          <input class="search__input" type="search" id="search" value="Поиск по сайту">
+          <div class="search__wrapper">
+            <button class="search__btn" type="submit">Поиск по сайту</button>
+            <input class="search__input" type="search" id="search" placeholder="Поиск по сайту">
+          </div>
         </form>
         <div class="cart site-list__item">
           <a class="cart__link site-list__link" href="#">
@@ -61,12 +64,12 @@
         <ul class="to-catalog__links">
           <li class="to-catalog__links-item">
             <a class="to-catalog__link to-catalog__link--interior" href="catalog.html">
-              Предметы <span>интерьера</span>
+              <p>Предметы <span>интерьера</span></p>
             </a>
           </li>
           <li class="to-catalog__links-item">
             <a class="to-catalog__link to-catalog__link--toys" href="catalog.html">
-              Детские <span>игрушки</span>
+              <p>Детские <span>игрушки</span></p>
             </a>
           </li>
         </ul>
@@ -170,8 +173,12 @@
           </li>
         </ul>
         <div class="slider__controls">
-          <button class="slider__btn slider__btn--prev">Предыдущий</button>
-          <button class="slider__btn slider__btn--next">Следующий</button>
+          <button class="slider__btn slider__btn--prev">
+            Предыдущий
+          </button>
+          <button class="slider__btn slider__btn--next">
+            Следующий
+          </button>
         </div>
         <a class="reviews__btn btn" href="#">Написать</a>
       </div>
@@ -225,8 +232,8 @@
       </div>
       <div class="page-footer__copyright copyright">
         <span class="copyright-text">Разработано</span>
-        <a class="copyright__link" href="#">
-          <span class="visually-hidden">HTML Academy</span>
+        <a class="copyright__link" href="https://up.htmlacademy.ru/adaptive/18">
+          HTML Academy
         </a>
       </div>
     </div>

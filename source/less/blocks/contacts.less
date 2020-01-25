@@ -1,19 +1,59 @@
+.contacts {
+  margin-top: 45px;
+
+  background-image: url("../img/bg-zigzag-line.svg");
+  background-repeat: repeat-x;
+  background-size: auto 6px;
+  background-position: -5px 0;
+}
+
+.contacts__title {
+  padding-top: 40px;
+
+  font-size: 18px;
+}
+
 .contacts__data {
+  margin-top: 26px;
+
   font-family: "Opensans", "Arial", "Helvetica", sans-serif;
   line-height: 30px;
   color: @grey-color;
 }
 
+.contacts__link {
+  display: inline-block;
+  margin-left: 26px;
+
+  color: @grey-color;
+  text-decoration: none;
+
+  border-bottom: 1px solid @green-color;
+}
+
 .contacts__address {
+  margin-top: 30px;
+
   font-style: normal;
+  & span,
+  & p {
+    display: inline-block;
+  }
+
+  & span {
+    vertical-align: top;
+  }
 
   & p {
+    width: 150px;
     margin: 0;
+    margin-left: 26px;
   }
 }
 
 .contacts__map {
   min-height: 465px;
+  margin-top: 37px;
 }
 
 .contacts__static-map {
@@ -28,7 +68,11 @@
 
 .contacts__btn {
   width: 260px;
-  margin: 0 auto;
+  margin: 31px auto 39px;
+  padding: 13px 0 15px;
+
+  font-size: 18px;
+  line-height: 20px;
 }
 
 @media (min-width: @tablet-width) {
