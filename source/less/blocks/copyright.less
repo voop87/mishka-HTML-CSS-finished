@@ -8,5 +8,25 @@
 }
 
 .copyright__link {
+  position: relative;
+
   font-size: 0;
+  text-decoration: none;
+  color: #000000;
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    top: 22px;
+    left: 194px;
+
+    width: 27px;
+    height: 34px;
+
+    background-image: url("../img/logo-htmlacademy.svg");
+    background-repeat: no-repeat;
+    background-size: 27px 34px;
+    background-position: 0 0;
+  }
 }
