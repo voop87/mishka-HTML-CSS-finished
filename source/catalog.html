@@ -11,7 +11,7 @@
   <header class="page-header">
     <div class="page-header__wrapper">
       <div class="page-header__logo">
-        <a href="index.html">
+        <a>
           <img src="img/logo-mobile.svg" width="85.589" height="35.034" alt="Логотип магазина 'Mishka'">
         </a>
       </div>
@@ -21,7 +21,7 @@
       <nav class="main-nav">
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
-            <a class="site-list__link">Каталог товаров</a>
+            <a class="site-list__link" href="catalog.html">Каталог товаров</a>
           </li>
           <li class="site-list__item">
             <a class="site-list__link" href="form.html">Вязание на заказ</a>
@@ -33,7 +33,10 @@
       </nav>
       <div class="search-and-cart site-list">
         <form class="search site-list__item">
-          <input class="search__input" type="search" id="search" value="Поиск по сайту">
+          <div class="search__wrapper">
+            <button class="search__btn" type="submit">Поиск по сайту</button>
+            <input class="search__input" type="search" id="search" placeholder="Поиск по сайту">
+          </div>
         </form>
         <div class="cart site-list__item">
           <a class="cart__link site-list__link" href="#">
@@ -115,7 +118,7 @@
   <footer class="page-footer">
     <div class="page-footer__flex-wrapper wrapper">
       <div class="page-footer__logo">
-        <a href="index.html">
+        <a>
           <img src="img/logo-footer.svg" width="85.589" height="35.034" alt="Логотип магазина 'Mishka'">
         </a>
       </div>
@@ -133,9 +136,9 @@
         </ul>
       </div>
       <div class="page-footer__copyright copyright">
-        <span class="copyright-text">Разработано</span>
-        <a class="copyright__link" href="#">
-          <span class="visually-hidden">HTML Academy</span>
+        <a class="copyright__link" href="https://up.htmlacademy.ru/adaptive/18">
+          <span class="copyright-text">Разработано</span>
+          HTML Academy
         </a>
       </div>
     </div>

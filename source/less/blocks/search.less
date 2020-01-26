@@ -39,9 +39,27 @@
 }
 
 @media (min-width: @tablet-width) {
-  .search__input {
-    width: 80px;
+  .search {
+    width: 84px;
+    padding: 0;
 
     border-left: 1px solid #e7e7e7;
+    border-right: 1px solid #e7e7e7;
+    box-sizing: border-box;
+  }
+
+  .search__wrapper {
+    width: auto;
+  }
+
+  .search__btn {
+    width: 84px;
+    height: 88px;
+
+    background-position: 50% 51%;
+  }
+
+  .search__input {
+    display: none;
   }
 }

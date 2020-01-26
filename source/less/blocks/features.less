@@ -127,9 +127,18 @@
 @media (min-width: @tablet-width) {
   .features {
     margin-top: 50px;
+
+    background-position: 24px 3px;
+    background-size: auto 15px;
+  }
+
+  .features__title {
+    margin-left: -4px;
+    padding-top: 68px;
   }
 
   .features__list {
+    margin-top: 17px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -137,9 +146,38 @@
 
   .features__item {
     width: 50%;
+    min-height: 69px;
 
     font-size: 20px;
     line-height: 22px;
+
+    &:not(:first-child) {
+      margin-top: 0;
+    }
+
+    & span {
+      display: block;
+    }
+
+    &--ball {
+      order: 1;
+    }
+
+    &--money {
+      order: 2;
+    }
+
+    &--rocket {
+      order: 3;
+    }
+
+    &--heart {
+      order: 4;
+    }
+
+    &--gift {
+      order: 5;
+    }
   }
 }
 

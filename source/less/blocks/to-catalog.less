@@ -95,18 +95,24 @@
   .to-catalog {
     background-image: url("../img/hero-tablet@1x.jpg");
     background-size: 1150px 746px;
+    background-position: 50% 0;
   }
 
   .to-catalog__title {
     margin: 0;
-    padding-top: 120px;
+    padding-top: 153px;
 
     font-size: 43px;
     line-height: 50px;
   }
 
+  .to-catalog__wrapper {
+    width: 670px;
+    margin: 0 auto;
+  }
+
   .to-catalog__links {
-    margin-top: 350px;
+    margin-top: 373px;
     display: flex;
   }
 
@@ -115,8 +121,20 @@
   }
 
   .to-catalog__link {
+    padding-top: 28px;
+
     font-size: 20px;
     line-height: 30px;
+
+    &--interior::after {
+      top: 30px;
+      right: 36px;
+    }
+
+    &--toys::after {
+      top: 32px;
+      right: 35px;
+    }
   }
 }
 
