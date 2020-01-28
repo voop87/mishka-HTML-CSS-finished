@@ -62,25 +62,52 @@
 
 @media (min-width: @tablet-width) {
   .production {
-    margin-top: 20px;
+    margin-top: -5px;
+    margin-bottom: 63px;
   }
 
   .production__flex-wrapper {
+    position: relative;
+
     display: flex;
     flex-direction: column;
+    margin-top: 513px;
+  }
+
+  .production__title {
+    padding-top: 38px;
+    padding-left: 107px;
+
+    font-size: 20px;
+
+    &::before {
+      top: 33px;
+      left: 43px;
+    }
   }
 
   .production__video {
-    order: -1;
+    position: absolute;
+    top: -456px;
+
+    width: 668px;
     height: 455px;
 
     background-image: url("../img/video-tablet@1x.jpg");
     background-size: 668px 455px;
   }
 
+  .production__text {
+    padding: 8px 43px;
+
+    font-size: 15px;
+    line-height: 30px;
+  }
+
   .production__btn {
     width: 584px;
-    margin: 0 auto;
+    margin-top: 27px;
+    margin-bottom: 45px;
   }
 }
 

@@ -21,22 +21,22 @@
 
 .item-card__text {
   margin-top: 5px;
-  padding-bottom: 19px;
 
   font-family: "Opensans", "Arial", "Helvetica", sans-serif;
   font-size: 13px;
   line-height: 30px;
   color: @grey-color;
-
-  border-bottom: 1px solid #ededed;
 }
 
 .item-card__price {
-  display: inline-block;
-  margin-top: 21px;
+  display: block;
+  margin-top: 19px;
   margin-bottom: 27px;
+  padding-top: 21px;
 
   line-height: 24px;
+
+  border-top: 1px solid #ededed;
 }
 
 .item-card__btn {
@@ -59,10 +59,43 @@
   .item-card {
     display: flex;
     flex-wrap: wrap;
+    min-height: 330px;
   }
 
   .item-card__image {
     width: 50%;
+    margin-top: -5px;
+  }
+
+  .item-card__description {
+    width: 50%;
+    padding: 0 33px 0 27px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+  }
+
+  .item-card__title {
+    width: 238px;
+
+    font-size: 20px;
+  }
+
+  .item-card__text {
+    font-size: 15px;
+  }
+
+  .item-card__price {
+    margin-top: auto;
+    margin-bottom: 25px;
+    margin-left: 5px;
+    padding-top: 23px;
+
+    font-size: 17px;
+  }
+
+  .item-card__btn {
+    right: 32px;
   }
 }
 
