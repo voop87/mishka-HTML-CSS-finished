@@ -116,18 +116,44 @@
     position: relative;
 
     min-height: 455px;
+    margin-top: 0;
+    margin-bottom: 104px;
   }
 
   .production__flex-wrapper {
     width: 367px;
-    margin-left: 683px;
+    margin-top: 0;
+    margin-left: 731px;
+  }
+
+  .production__title {
+    padding: 95px 60px 24px 78px;
+
+    &::before {
+      top: 40px;
+      left: 80px;
+    }
   }
 
   .production__video {
     position: absolute;
     top: 0;
-    left: 0;
+    left: -682px;
 
-    width: 668px;
+    width: 682px;
+
+    background-image: url("../img/video-desktop@1x.jpg");
+    background-size: 682px 455px;
+  }
+
+  .production__text {
+    padding-left: 78px;
+  }
+
+  .production__btn {
+    width: 230px;
+    margin-top: 38px;
+    margin-bottom: 60px;
+    margin-left: 80px;
   }
 }
