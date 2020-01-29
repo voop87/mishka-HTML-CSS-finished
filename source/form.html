@@ -68,22 +68,22 @@
         </p>
       </div>
       <fieldset class="form__fieldset type">
-        <div class="wrapper">
+        <div class="wrapper form__fieldset-wrapper">
           <h2 class="form__legend">Тип</h2>
           <ul class="type__list">
             <li>
-              <input class="form__radio visually-hidden" type="radio" id="accessoir" name="accessoir" checked>
+              <input class="form__radio visually-hidden" type="radio" name="type" id="accessoir" value="accessoir" checked>
               <label class="form__label type__label" for="accessoir">Аксессуар для интерьера</label>
             </li>
             <li>
-              <input class="form__radio visually-hidden" type="radio" id="toy" name="toy">
+              <input class="form__radio visually-hidden" type="radio" name="type" id="toy" value="toy">
               <label class="form__label type__label" for="toy">Детская игрушка</label>
             </li>
           </ul>
         </div>
       </fieldset>
       <fieldset class="form__fieldset form__fieldset--grey color">
-        <div class="wrapper">
+        <div class="wrapper form__fieldset-wrapper">
           <h2 class="form__legend">Цвет</h2>
           <ul class="color__list">
             <li>
@@ -96,7 +96,7 @@
             </li>
             <li>
               <input class="form__checkbox visually-hidden" type="checkbox" id="tiffany" name="tiffany">
-              <label class="form__label color__label" for="tiffany">"Тиффани"</label>
+              <label class="form__label color__label" for="tiffany">&laquo;Тиффани&raquo;</label>
             </li>
             <li>
               <input class="form__checkbox visually-hidden" type="checkbox" id="black" name="black">
@@ -114,7 +114,7 @@
         </div>
       </fieldset>
       <fieldset class="form__fieldset name">
-        <div class="wrapper">
+        <div class="wrapper form__fieldset-wrapper">
           <h2 class="form__legend">ФИО</h2>
           <ul class="name__list">
             <li>
@@ -133,21 +133,23 @@
         </div>
       </fieldset>
       <fieldset class="form__fieldset form__fieldset--grey">
-        <div class="wrapper">
+        <div class="wrapper form__fieldset-wrapper">
           <h2 class="form__legend">Тел</h2>
-          <input class="form__input" type="tel" placeholder="+7 XXX XX XX*" required>
+          <input class="form__input" type="tel" id="tel" placeholder="+7 XXX XX XX*" required>
+          <label for="tel"></label>
         </div>
       </fieldset>
       <fieldset class="form__fieldset form__fieldset--grey">
-        <div class="wrapper">
+        <div class="wrapper form__fieldset-wrapper">
           <h2 class="form__legend">E-mail</h2>
-          <input class="form__input" type="email" placeholder="Ваш Email*" required>
+          <input class="form__input" type="email" id="email" placeholder="Ваш Email*" required>
+          <label for="email"></label>
         </div>
       </fieldset>
       <fieldset class="form__fieldset">
-        <div class="wrapper">
+        <div class="wrapper form__fieldset-wrapper">
           <h2 class="form__legend">Доп</h2>
-          <textarea class="form__textarea" name="additional" id="additional" cols="20" rows="10" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+          <textarea class="form__textarea" name="additional" id="additional" cols="20" rows="6" placeholder="Опишите все ваши пожелания к заказу"></textarea>
         </div>
       </fieldset>
       <div class="wrapper form__flex-wrapper">
