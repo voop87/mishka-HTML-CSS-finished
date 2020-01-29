@@ -15,14 +15,28 @@
 }
 
 @media (min-width: @tablet-width) {
+  .color {
+    margin-top: 11px;
+    padding-top: 65px;
+  }
+
   .color__list {
     width: 500px;
+    margin: 0;
+    padding-left: 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 
     & li {
       width: 250px;
+      margin-bottom: 56px;
+      padding-left: 81px;
+      box-sizing: border-box;
+    }
+
+    & li:nth-child(even) {
+      padding-left: 93px;
     }
   }
 }
