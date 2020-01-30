@@ -351,17 +351,62 @@
 }
 
 @media (min-width: @desktop-width) {
+  .form {
+    margin-bottom: 49px;
+  }
+
   .form__title {
+    padding-bottom: 101px;
+
     font-size: 53px;
     line-height: 57px;
   }
 
+  .form__wrapper {
+    margin-top: -15px;
+
+    background-size: auto 34px;
+    background-position: 0px 0;
+  }
+
+  .form__description {
+    width: 700px;
+    padding-top: 139px;
+  }
+
+  .form__fieldset-wrapper {
+    align-items: baseline;
+  }
+
   .form__legend {
-    width: 175px;
+    width: 165px;
+
+    text-align: center;
   }
 
   .form__legend + input,
   .form__textarea {
     width: 700px;
+  }
+
+  .form__input[type="tel"] {
+    margin-left: 18px;
+  }
+
+  .form__input[type="tel"] + label {
+    right: 184px;
+  }
+
+  .form__input[type="email"] + label {
+    right: 177px;
+  }
+
+  .form__textarea {
+    margin-left: 10px;
+  }
+
+  .form__flex-wrapper {
+    width: 700px;
+    margin-top: -4px;
   }
 }
