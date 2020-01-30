@@ -16,8 +16,25 @@
 }
 
 @media (min-width: @tablet-width) {
+  .name {
+    margin-top: 65px;
+    padding-bottom: 11px;
+  }
+
   .name__list {
     width: 500px;
+    margin-top: 0;
+
+    & li {
+      flex-direction: row;
+      margin-bottom: 39px;
+    }
+  }
+
+  .name__input {
+    margin-top: -4px;
+    margin-left: 26px;
+    padding: 0 0 13px 16px;
   }
 }
 

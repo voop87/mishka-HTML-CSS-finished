@@ -208,6 +208,15 @@
 }
 
 @media (min-width: @tablet-width) {
+  .form {
+    margin-bottom: 50px;
+  }
+
+  .form__fieldset {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
   .form__fieldset--grey {
     background-color: #f1f1f1;
   }
@@ -268,6 +277,23 @@
   .form__label,
   .form__textarea {
     font-size: 19px;
+
+    background-color: transparent;
+  }
+
+  .form__input[type="tel"],
+  .form__input[type="email"] {
+    padding: 0 17px 13px;
+  }
+
+  .form__input[type="tel"] + label {
+    top: 0px;
+    right: 27px;
+  }
+
+  .form__input[type="email"] + label {
+    top: 0px;
+    right: 21px;
   }
 
   .form__radio + .form__label::before {
@@ -286,11 +312,41 @@
     height: 22px;
   }
 
+  .form__checkbox + .form__label::before {
+    top: -11px;
+    left: -80px;
+
+    width: 54px;
+    height: 52px;
+
+    background-size: 54px 52px;
+  }
+
+  .form__checkbox:checked + .form__label::after {
+    top: 5px;
+    left: -69px;
+
+    width: 33px;
+    height: 22px;
+
+    background-size: 33px 22px;
+  }
+
+  .form__textarea {
+    margin-top: 0;
+  }
+
   .form__flex-wrapper {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     flex-direction: row-reverse;
+    align-items: baseline;
+  }
+
+  .form__btn {
+    width: 231px;
+    margin-top: 0;
   }
 }
 
