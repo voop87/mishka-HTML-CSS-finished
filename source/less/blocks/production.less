@@ -3,6 +3,8 @@
 }
 
 .production__flex-wrapper {
+  position: relative;
+
   border: 1px solid #ececec;
 }
 
@@ -44,6 +46,31 @@
   background-position: 0 0;
 }
 
+.production__play-btn {
+  position: absolute;
+  top: 133px;
+  left: 80px;
+
+  width: 101px;
+  height: 77px;
+
+  border: none;
+  background-color: transparent;
+  background-image: url("../img/icon-play.svg");
+  background-repeat: no-repeat;
+  background-size: 101px 77px;
+  background-position: 0 0;
+
+  &:hover {
+    transform: scale(1.2);
+  }
+
+  &:active {
+    transform: scale(0.8);
+    opacity: 0.3;
+  }
+}
+
 .production__text {
   margin: 0;
   padding: 27px 40px 25px 33px;
@@ -72,6 +99,14 @@
     display: flex;
     flex-direction: column;
     margin-top: 513px;
+
+    &:hover {
+      box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+    }
+
+    &:active {
+      box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
+    }
   }
 
   .production__title {
@@ -95,6 +130,11 @@
 
     background-image: url("../img/video-tablet@1x.jpg");
     background-size: 668px 455px;
+  }
+
+  .production__play-btn {
+    top: -266px;
+    left: 285px;
   }
 
   .production__text {
@@ -146,6 +186,11 @@
 
     background-image: url("../img/video-desktop@1x.jpg");
     background-size: 682px 455px;
+  }
+
+  .production__play-btn {
+    top: 187px;
+    left: -392px;
   }
 
   .production__text {

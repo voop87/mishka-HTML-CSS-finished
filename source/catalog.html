@@ -57,15 +57,40 @@
 
   <main class="page-main">
     <section class="catalog">
+      <div class="catalog__modal modal">
+        <h2 class="modal__title">Добавить в корзину</h2>
+        <div class="modal__wrapper">
+          <p class="modal__text">Выберите размер:</p>
+          <ul class="modal__size-list">
+            <li>
+              <input class="modal__input visually-hidden" type="radio" name="size" id="size-S" value="size-S" checked>
+              <label class="modal__label" for="size-S">S</label>
+            </li>
+            <li>
+              <input class="modal__input visually-hidden" type="radio" name="size" id="size-M" value="size-M">
+              <label class="modal__label" for="size-M">M</label>
+            </li>
+            <li>
+              <input class="modal__input visually-hidden" type="radio" name="size" id="size-L" value="size-L">
+              <label class="modal__label" for="size-L">L</label>
+            </li>
+          </ul>
+          <button class="btn modal__btn" type="submit">Добавить</button>
+        </div>
+      </div>
       <div class="catalog__wrapper">
         <h1 class="catalog__title">Каталог товаров</h1>
       </div>
       <div class="wrapper">
         <ul class="catalog__list">
           <li class="catalog__item item-card">
-            <img class="item-card__image" src="img/photo-hare-mobile@1x.jpg" width="260" height="195" alt="Фото товара 'Зайчик-попрыгайчик'">
+            <a class="item-card__link" href="#">
+              <img class="item-card__image" src="img/photo-hare-mobile@1x.jpg" width="260" height="195" alt="Фото товара 'Зайчик-попрыгайчик'">
+            </a>
             <div class="item-card__description">
-              <h3 class="item-card__title">Зайчик-попрыгайчик</h3>
+              <a href="#">
+                <h3 class="item-card__title">Зайчик-попрыгайчик</h3>
+              </a>
               <p class="item-card__text">
                 Рост 30 см, вес 200 г
               </p>
@@ -74,9 +99,13 @@
             </div>
           </li>
           <li class="catalog__item item-card">
-            <img class="item-card__image" src="img/photo-bowl-mobile@1x.jpg" width="260" height="195" alt="Фото товара 'Корзина для белья'">
+            <a class="item-card__link" href="#">
+              <img class="item-card__image" src="img/photo-bowl-mobile@1x.jpg" width="260" height="195" alt="Фото товара 'Корзина для белья'">
+            </a>
             <div class="item-card__description">
-              <h3 class="item-card__title">Корзинка для белья</h3>
+              <a href="#">
+                <h3 class="item-card__title">Корзинка для белья</h3>
+              </a>
               <p class="item-card__text">
                 Диаметр 15 см, высота 10 см
               </p>
@@ -85,9 +114,13 @@
             </div>
           </li>
           <li class="catalog__item item-card">
-            <img class="item-card__image" src="img/photo-toys-mobile@1x.jpg" width="260" height="195" alt="Фото товара 'Большая корзинка для игрушек'">
+            <a class="item-card__link" href="#">
+              <img class="item-card__image" src="img/photo-toys-mobile@1x.jpg" width="260" height="195" alt="Фото товара 'Большая корзинка для игрушек'">
+            </a>
             <div class="item-card__description">
-              <h3 class="item-card__title">Большая корзинка для игрушек</h3>
+              <a href="#">
+                <h3 class="item-card__title">Большая корзинка для игрушек</h3>
+              </a>
               <p class="item-card__text">
                 Диаметр 30 см, высота 30 см
               </p>
@@ -103,6 +136,7 @@
       <div class="production__flex-wrapper wrapper">
         <h2 class="production__title">Процесс производства</h2>
         <figure class="production__video"></figure>
+        <button class="production__play-btn" type="button"></button>
         <p class="production__text">
           По просьбам наших
           любимых фолловеров мы

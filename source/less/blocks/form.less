@@ -88,6 +88,11 @@
 
   border: none;
   border-bottom: 2px solid #000000;
+
+  &:hover,
+  &:focus {
+    border-bottom-color: @green-color;
+  }
 }
 
 .form__radio + .form__label {
@@ -107,6 +112,14 @@
     border: 2px solid @grey-color;
     border-radius: 50%;
   }
+
+  &:hover::before {
+    border-color: @green-color;
+  }
+
+  &:active::before {
+    border-color: rgba(68, 68, 68, 0.3);
+  }
 }
 
 .form__radio:checked + .form__label::after {
@@ -124,6 +137,16 @@
   background-color: @green-color;
 }
 
+.form__radio:disabled + .form__label,
+.form__checkbox:disabled + .form__label {
+  opacity: 0.2;
+}
+
+.form__radio:focus + .form__label,
+.form__checkbox:focus + .form__label {
+  outline: 2px auto rgb(77, 144, 254);
+}
+
 .form__checkbox + .form__label {
   position: relative;
 
@@ -139,6 +162,14 @@
     box-sizing: border-box;
 
     border: 2px solid @grey-color;
+  }
+
+  &:hover::before {
+    border-color: @green-color;
+  }
+
+  &:active::before {
+    border-color: rgba(68, 68, 68, 0.3);
   }
 }
 
@@ -196,6 +227,11 @@
   box-sizing: border-box;
 
   border: 2px solid #444444;
+
+  &:hover,
+  &:focus {
+    border-color: @green-color;
+  }
 }
 
 .form__text {
