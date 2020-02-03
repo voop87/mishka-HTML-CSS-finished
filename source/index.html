@@ -12,7 +12,11 @@
     <div class="page-header__wrapper">
       <div class="page-header__logo">
         <a>
-          <img src="img/logo-mobile.svg" width="85.589" height="35.034" alt="Логотип магазина 'Mishka'">
+          <picture>
+            <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
+            <source media="(min-width: 738px)" srcset="img/logo-tablet.svg">
+            <img class="page-header__logo-image" src="img/logo-mobile.svg" width="85" height="35" alt="Логотип магазина 'Mishka'">
+          </picture>
         </a>
       </div>
       <button class="page-header__menu-toggle" onclick="showMenu()" type="button">
@@ -101,7 +105,11 @@
               <td>15 см</td>
             </tr>
           </table>
-          <img class="promo__image" src="img/triple-set-mobile@1x.jpg" width="260" height="315" alt="Фото товара недели">
+          <picture>
+            <source media="(min-width: 1150px)" srcset="img/triple-set-desktop@2x.jpg 2x, img/triple-set-desktop@1x.jpg 1x">
+            <source media="(min-width: 738px)" srcset="img/triple-set-tablet@2x.jpg 2x, img/triple-set-tablet@1x.jpg 1x">
+            <img class="promo__image" srcset="img/triple-set-mobile@2x.jpg 2x" src="img/triple-set-mobile@1x.jpg" width="260" height="315" alt="Фото товара недели">
+          </picture>
           <b class="promo__price">Цена: <span>990&nbsp;руб.</span></b>
           <a class="promo__btn btn" href="#">Заказать</a>
         </div>
@@ -217,7 +225,7 @@
     <div class="page-footer__flex-wrapper wrapper">
       <div class="page-footer__logo">
         <a>
-          <img src="img/logo-footer.svg" width="85.589" height="35.034" alt="Логотип магазина 'Mishka'">
+          <img class="page-footer__logo-image" src="img/logo-footer.svg" width="85" height="35" alt="Логотип магазина 'Mishka'">
         </a>
       </div>
       <div class="page-footer__social social">
