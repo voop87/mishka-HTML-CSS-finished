@@ -8,52 +8,57 @@
   <title>Мишка</title>
 </head>
 <body>
-  <header class="page-header">
-    <div class="page-header__wrapper">
-      <div class="page-header__logo">
-        <a href="index.html">
-          <img src="img/logo-mobile.svg" width="85.589" height="35.034" alt="Логотип магазина 'Mishka'">
-        </a>
-      </div>
-      <button class="page-header__menu-toggle" onclick="showMenu()" type="button">
-        <span class="visually-hidden">Открыть меню</span>
-      </button>
-      <nav class="main-nav">
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item">
-            <a class="site-list__link" href="catalog.html">Каталог товаров</a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link">Вязание на заказ</a>
-          </li>
-          <li class="site-list__item site-list__info">
-            Бесплатная доставка по России
-          </li>
-        </ul>
-      </nav>
-      <div class="search-and-cart site-list">
-        <form class="search site-list__item">
-          <div class="search__wrapper">
-            <button class="search__btn" type="submit">Поиск по сайту</button>
-            <input class="search__input" type="search" id="search" placeholder="Поиск по сайту">
+    <header class="page-header">
+        <div class="page-header__wrapper">
+          <div class="page-header__logo">
+            <a href="index.html">
+              <picture>
+                <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
+                <source media="(min-width: 738px)" srcset="img/logo-tablet.svg">
+                <img class="page-header__logo-image" src="img/logo-mobile.svg" width="85" height="35" alt="Логотип магазина 'Mishka'">
+              </picture>
+            </a>
           </div>
-        </form>
-        <div class="cart site-list__item">
-          <a class="cart__link site-list__link" href="#">
-            <span class="cart__name">Корзина: </span><span class="cart__volume">пока пуста</span>
-          </a>
+          <button class="page-header__menu-toggle" onclick="showMenu()" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+          <nav class="main-nav">
+            <ul class="main-nav__list site-list">
+              <li class="site-list__item">
+                <a class="site-list__link" href="catalog.html">Каталог товаров</a>
+              </li>
+              <li class="site-list__item">
+                <a class="site-list__link">Вязание на заказ</a>
+              </li>
+              <li class="site-list__item site-list__info">
+                Бесплатная доставка по России
+              </li>
+            </ul>
+          </nav>
+          <div class="search-and-cart site-list">
+            <form class="search site-list__item">
+              <div class="search__wrapper">
+                <button class="search__btn" type="submit">Поиск по сайту</button>
+                <input class="search__input" type="search" id="search" placeholder="Поиск по сайту">
+              </div>
+            </form>
+            <div class="cart site-list__item">
+              <a class="cart__link site-list__link" href="#">
+                <span class="cart__name">Корзина: </span>
+                <span class="cart__volume">пока пуста</span>
+              </a>
+            </div>
+          </div>
+          <ul class="main-nav__additional-links">
+            <li>
+              <a class="main-nav__additional-link" href="#">Новые поступления</a>
+            </li>
+            <li>
+              <a class="main-nav__additional-link" href="#">Распродажа</a>
+            </li>
+          </ul>
         </div>
-      </div>
-      <ul class="main-nav__additional-links">
-        <li>
-          <a class="main-nav__additional-link" href="#">Новые поступления</a>
-        </li>
-        <li>
-          <a class="main-nav__additional-link" href="#">Распродажа</a>
-        </li>
-      </ul>
-    </div>
-  </header>
+      </header>
 
   <main class="page-main">
     <form class="form" action="https://echo.htmlacademy.ru" method="post">
