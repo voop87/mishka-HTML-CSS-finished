@@ -12,7 +12,11 @@
     <div class="page-header__wrapper">
       <div class="page-header__logo">
         <a href="index.html">
-          <img src="img/logo-mobile.svg" width="85.589" height="35.034" alt="Логотип магазина 'Mishka'">
+          <picture>
+            <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
+            <source media="(min-width: 738px)" srcset="img/logo-tablet.svg">
+            <img class="page-header__logo-image" src="img/logo-mobile.svg" width="85" height="35" alt="Логотип магазина 'Mishka'">
+          </picture>
         </a>
       </div>
       <button class="page-header__menu-toggle" onclick="showMenu()" type="button">
@@ -40,7 +44,8 @@
         </form>
         <div class="cart site-list__item">
           <a class="cart__link site-list__link" href="#">
-            <span class="cart__name">Корзина: </span><span class="cart__volume">пока пуста</span>
+            <span class="cart__name">Корзина: </span>
+            <span class="cart__volume">пока пуста</span>
           </a>
         </div>
       </div>
@@ -85,7 +90,11 @@
         <ul class="catalog__list">
           <li class="catalog__item item-card">
             <a class="item-card__link" href="#">
-              <img class="item-card__image" src="img/photo-hare-mobile@1x.jpg" width="260" height="195" alt="Фото товара 'Зайчик-попрыгайчик'">
+              <picture>
+                <source media="(min-width: 1150px)" srcset="img/photo-hare-desktop@2x.jpg 2x, img/photo-hare-desktop@1x.jpg 1x">
+                <source media="(min-width: 738px)" srcset="img/photo-hare-tablet@2x.jpg 2x, img/photo-hare-tablet@1x.jpg 1x">
+                <img class="item-card__image" srcset="img/photo-hare-mobile@2x.jpg 2x" src="img/photo-hare-mobile@1x.jpg" width="260" height="195" alt="Фото товара 'Зайчик-попрыгайчик'">
+              </picture>
             </a>
             <div class="item-card__description">
               <a href="#">
@@ -100,7 +109,11 @@
           </li>
           <li class="catalog__item item-card">
             <a class="item-card__link" href="#">
-              <img class="item-card__image" src="img/photo-bowl-mobile@1x.jpg" width="260" height="195" alt="Фото товара 'Корзина для белья'">
+              <picture>
+                <source media="(min-width: 1150px)" srcset="img/photo-bowl-desktop@2x.jpg 2x, img/photo-bowl-desktop@1x.jpg 1x">
+                <source media="(min-width: 738px)" srcset="img/photo-bowl-tablet@2x.jpg 2x, img/photo-bowl-tablet@1x.jpg 1x">
+                <img class="item-card__image" srcset="img/photo-bowl-mobile@2x.jpg 2x" src="img/photo-bowl-mobile@1x.jpg" width="260" height="195" alt="Фото товара 'Корзина для белья'">
+              </picture>
             </a>
             <div class="item-card__description">
               <a href="#">
@@ -115,7 +128,11 @@
           </li>
           <li class="catalog__item item-card">
             <a class="item-card__link" href="#">
-              <img class="item-card__image" src="img/photo-toys-mobile@1x.jpg" width="260" height="195" alt="Фото товара 'Большая корзинка для игрушек'">
+              <picture>
+                <source media="(min-width: 1150px)" srcset="img/photo-toys-desktop@2x.jpg 2x, img/photo-toys-desktop@1x.jpg 1x">
+                <source media="(min-width: 738px)" srcset="img/photo-toys-tablet@2x.jpg 2x, img/photo-toys-tablet@1x.jpg 1x">
+                <img class="item-card__image" srcset="img/photo-toys-mobile@2x.jpg 2x" src="img/photo-toys-mobile@1x.jpg" width="260" height="195" alt="Фото товара 'Большая корзинка для игрушек'">
+              </picture>
             </a>
             <div class="item-card__description">
               <a href="#">
@@ -153,7 +170,7 @@
     <div class="page-footer__flex-wrapper wrapper">
       <div class="page-footer__logo">
         <a href="index.html">
-          <img src="img/logo-footer.svg" width="85.589" height="35.034" alt="Логотип магазина 'Mishka'">
+          <img class="page-footer__logo-image" src="img/logo-footer.svg" width="85" height="35" alt="Логотип магазина 'Mishka'">
         </a>
       </div>
       <div class="page-footer__social social">

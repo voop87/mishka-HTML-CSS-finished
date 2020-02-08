@@ -9,11 +9,11 @@
 
   text-align: center;
 
-  & a:hover {
+  & a[href]:hover {
     opacity: 0.6;
   }
 
-  & a:active {
+  & a[href]:active {
     opacity: 0.3;
   }
 }
@@ -69,7 +69,6 @@
   .page-header {
     position: relative;
 
-    max-width: @desktop-width;
     width: 100%;
     margin: 0 auto;
   }
@@ -84,9 +83,9 @@
 
     padding: 8px 0px 3px 64px;
   }
-}
 
-.page-header__logo-image {
-  width: 149px;
-  height: 73px;
+  .page-header__logo-image {
+    width: 149px;
+    height: 73px;
+  }
 }

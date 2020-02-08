@@ -4,15 +4,16 @@
 
 @media (min-width: @tablet-width) {
  .main-nav {
-   position: absolute;
-   top: 80px;
-   left: 0;
+    z-index: 1;
+    position: absolute;
+    top: 80px;
+    left: 0;
 
-   width: 670px;
+    width: 670px;
  }
 
  .main-nav__list {
-   width: auto;
+    width: auto;
  }
 }
 
@@ -40,6 +41,7 @@
   }
 
   .main-nav__additional-links {
+    z-index: 1;
     position: absolute;
     top: 106px;
     left: 0;
