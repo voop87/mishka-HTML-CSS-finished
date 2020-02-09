@@ -54,10 +54,20 @@
 
   font-size: 0;
 
-  background-image: url("../img/icon-cart.svg");
-  background-repeat: no-repeat;
-  background-size: 21px 20px;
-  background-position: 0 0;
+  &:hover .item-card__btn-icon {
+    fill: @green-color;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.item-card__btn-icon {
+  width: 21px;
+  height: 20px;
+
+  fill: #cccccc;
 }
 
 @media (min-width: @tablet-width) {
