@@ -6,6 +6,10 @@
   background-repeat: no-repeat;
   background-position: 50% -18px;
   background-size: 575px 373px ;
+
+  @media (min-resolution: @retina-dppx), (min-resolution: @retina-dpi) {
+    background-image: url("../img/hero-mobile@2x.jpg");
+  }
 }
 
 .to-catalog__title {
@@ -58,43 +62,11 @@
     background-color: #56c3b2;
   }
 
-  &::after {
-    content: "";
-
-    position: absolute;
-
-    background-repeat: no-repeat;
-    background-position: 0 0;
-    opacity: 0.5;
-  }
-
-  &--interior::after {
-    top: 23px;
-    right: 35px;
-
-    width: 41px;
-    height: 62px;
-
-    background-image: url("../img/icon-interior.svg");
-    background-size: 41px 62px;
-  }
-
-  &--toys::after {
-    top: 21px;
-    right: 27px;
-
-    width: 60px;
-    height: 60px;
-
-    background-image: url("../img/icon-toy.svg");
-    background-size: 60px 60px;
-  }
-
   &:hover {
     padding-bottom: 35px;
   }
 
-  &:hover::after {
+  &:hover .to-catalog__link-icon {
     opacity: 0.7;
   }
 
@@ -102,7 +74,7 @@
     background-color: #59d5bc;
   }
 
-  &--interior:hover::after {
+  &--interior:hover .to-catalog__link-icon--interior {
     top: 18px;
   }
 
@@ -110,13 +82,36 @@
     background-color: #46c1ae;
   }
 
-  &--toys:hover::after {
+  &--toys:hover .to-catalog__link-icon--toys {
     top: 16px;
   }
 
   &:active p,
-  &:active::after {
+  &:active .to-catalog__link-icon{
     opacity: 0.3;
+  }
+}
+
+.to-catalog__link-icon {
+  position: absolute;
+
+  fill: #149080;
+  opacity: 0.5;
+
+  &--interior {
+    top: 23px;
+    right: 35px;
+
+    width: 41px;
+    height: 62px;
+  }
+
+  &--toys {
+    top: 21px;
+    right: 27px;
+
+    width: 60px;
+    height: 60px;
   }
 }
 
@@ -125,6 +120,10 @@
     background-image: url("../img/hero-tablet@1x.jpg");
     background-size: 1150px 746px;
     background-position: 50% 0;
+
+    @media (min-resolution: @retina-dppx), (min-resolution: @retina-dpi) {
+      background-image: url("../img/hero-tablet@2x.jpg");
+    }
   }
 
   .to-catalog__title {
@@ -156,33 +155,43 @@
     font-size: 20px;
     line-height: 30px;
 
-    &--interior::after {
-      top: 30px;
-      right: 36px;
-    }
-
-    &--toys::after {
-      top: 32px;
-      right: 35px;
-    }
-
     &:hover {
       height: 123px;
       padding-top: 23px;
       box-sizing: border-box;
     }
 
-    &--interior:hover::after {
+    &--interior:hover .to-catalog__link-icon--interior {
       top: 25px;
     }
 
-    &--toys:hover::after {
+    &--toys:hover .to-catalog__link-icon--toys {
       top: 27px;
+    }
+  }
+
+  .to-catalog__link-icon {
+    &--interior {
+      top: 30px;
+      right: 36px;
+    }
+
+    &--toys {
+      top: 32px;
+      right: 35px;
     }
   }
 }
 
 @media (min-width: @desktop-width) {
+  .to-catalog {
+    background-image: url("../img/hero-desktop@1x.jpg");
+
+    @media (min-resolution: @retina-dppx), (min-resolution: @retina-dpi) {
+      background-image: url("../img/hero-desktop@2x.jpg");
+    }
+  }
+
   .to-catalog__title {
     font-size: 53px;
     line-height: 57px;

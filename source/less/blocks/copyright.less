@@ -14,21 +14,24 @@
   text-decoration: none;
   color: #000000;
 
-  &::after {
-    content: "";
-
-    position: absolute;
-    top: 22px;
-    left: 194px;
-
-    width: 27px;
-    height: 34px;
-
-    background-image: url("../img/logo-htmlacademy.svg");
-    background-repeat: no-repeat;
-    background-size: 27px 34px;
-    background-position: 0 0;
+  &:hover .copyright__link-icon {
+    fill: #46c1ae;
   }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.copyright__link-icon {
+  position: absolute;
+  top: 22px;
+  left: 194px;
+    
+  width: 27px;
+  height: 34px;
+
+  fill: @green-color;
 }
 
 @media (min-width: @tablet-width) {
@@ -36,7 +39,7 @@
     margin: 0;
   }
 
-  .copyright__link::after {
+  .copyright__link-icon {
     top: -5px;
     left: 157px;
   }

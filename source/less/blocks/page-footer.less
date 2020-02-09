@@ -27,12 +27,13 @@
 
   .page-footer__logo {
     display: block;
+    width: 180px;
 
-    & a[href]:hover {
-      opacity: 0.6;
+    & a[href]:hover .page-footer__logo-image {
+      fill: #46c1ae;
     }
 
-    & a[href]:active {
+    & a[href]:active .page-footer__logo-image {
       opacity: 0.3;
     }
   }
@@ -40,10 +41,12 @@
   .page-footer__logo-image {
     width: 102px;
     height: 34px;
+
+    fill: #231f20;
   }
 
   .page-footer__copyright {
-    margin-top: 63px;
+    margin-top: 64px;
     margin-right: 57px;
 
     border-top: none;
