@@ -177,7 +177,7 @@
   content: "";
 
   position: absolute;
-  top: 2px;
+  top: 4px;
   left: -54px;
 
   width: 23px;
@@ -197,17 +197,32 @@
 
 .form__input[type="tel"] + label {
   position: absolute;
-  top: 25px;
+  top: 27px;
   right: 8px;
 
   display: block;
   width: 25px;
   height: 24px;
+}
 
-  background-image: url("../img/icon-phone.svg");
-  background-repeat: no-repeat;
-  background-size: 25px 24px;
-  background-position: 0 0;
+.form__phone-icon {
+  width: 25px;
+  height: 24px;
+}
+
+.form__email-icon {
+  width: 36px;
+  height: 32px;
+}
+
+.form__phone-icon,
+.form__email-icon {
+  fill: #cccccc;
+}
+
+.form__input[type="tel"]:hover + label .form__phone-icon,
+.form__input[type="tel"]:focus + label .form__phone-icon {
+  fill: @green-color;
 }
 
 .form__input[type="email"] + label {
@@ -218,11 +233,11 @@
   display: block;
   width: 36px;
   height: 32px;
+}
 
-  background-image: url("../img/icon-mail.svg");
-  background-repeat: no-repeat;
-  background-size: 36px 32px;
-  background-position: 0 0;
+.form__input[type="email"]:hover + label .form__email-icon,
+.form__input[type="email"]:focus + label .form__email-icon {
+  fill: @green-color;
 }
 
 .form__textarea {
