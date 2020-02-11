@@ -1,10 +1,19 @@
 .modal {
+  z-index: 1;
   position: absolute;
+  top: 0;
   bottom: 0;
   left: 0;
 
-  width: 320px;
   display: none;
+
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.modal__content {
+  width: 320px;
+  margin-top: 1046px;
+  padding-bottom: 46px;
 
   background-color: #ffffff;
   border-top: 1px solid #c7c7c7;
@@ -79,7 +88,6 @@
 
 .modal__btn {
   margin-top: 31px;
-  margin-bottom: 46px;
   width: 100%;
 
   color: #ffffff;
@@ -89,7 +97,7 @@
 }
 
 @media (min-width: @tablet-width) {
-  .modal {
+  .modal__content {
     left: 100px;
 
     width: 566px;
@@ -118,7 +126,7 @@
 }
 
 @media (min-width: @desktop-width) {
-  .modal {
+  .modal__content {
     left: 340px;
   }
 }

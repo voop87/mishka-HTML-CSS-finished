@@ -19,10 +19,10 @@
           </picture>
         </a>
       </div>
-      <button class="page-header__menu-toggle" onclick="showMenu()" type="button">
+      <button class="page-header__menu-toggle" id="page-header__menu-toggle" onclick="showMenu()" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
-      <nav class="main-nav">
+      <nav class="main-nav main-nav--opened" id="main-nav">
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
             <a class="site-list__link">Каталог товаров</a>
@@ -35,7 +35,7 @@
           </li>
         </ul>
       </nav>
-      <div class="search-and-cart site-list">
+      <div class="search-and-cart search-and-cart--opened site-list" id="search-and-cart">
         <form class="search site-list__item">
           <div class="search__wrapper">
             <button class="search__btn" type="submit">
@@ -69,8 +69,8 @@
   </header>
 
   <main class="page-main">
-    <section class="catalog">
-      <div class="catalog__modal modal">
+    <div class="modal" id="modal">
+      <div class="modal__content">
         <h2 class="modal__title">Добавить в корзину</h2>
         <div class="modal__wrapper">
           <p class="modal__text">Выберите размер:</p>
@@ -91,6 +91,8 @@
           <button class="btn modal__btn" type="submit">Добавить</button>
         </div>
       </div>
+    </div>
+    <section class="catalog">
       <div class="catalog__wrapper">
         <h1 class="catalog__title">Каталог товаров</h1>
       </div>
@@ -116,7 +118,7 @@
                 Рост 30 см, вес 200 г
               </p>
               <b class="item-card__price">1 200 руб.</b>
-              <a class="item-card__btn" href="#">
+              <a class="item-card__btn" href="#" onclick="showModal()">
                 <svg class="item-card__btn-icon" width="21" height="20">
                   <use xlink:href="img/sprite.svg#icon-cart"></use>
                 </svg>
@@ -144,7 +146,7 @@
                 Диаметр 15 см, высота 10 см
               </p>
               <b class="item-card__price">690 руб.</b>
-              <a class="item-card__btn" href="#">
+              <a class="item-card__btn" href="#" onclick="showModal()">
                 <svg class="item-card__btn-icon" width="21" height="20">
                   <use xlink:href="img/sprite.svg#icon-cart"></use>
                 </svg>
@@ -172,7 +174,7 @@
                 Диаметр 30 см, высота 30 см
               </p>
               <b class="item-card__price">1 500 руб.</b>
-              <a class="item-card__btn" href="#">
+              <a class="item-card__btn" href="#" onclick="showModal()">
                 <svg class="item-card__btn-icon" width="21" height="20">
                   <use xlink:href="img/sprite.svg#icon-cart"></use>
                 </svg>
@@ -258,5 +260,9 @@
       </div>
     </div>
   </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/picturefill.min.js"></script>
+  <script src="js/svg4everybody.js"></script>
 </body>
 </html>

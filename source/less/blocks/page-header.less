@@ -23,6 +23,7 @@
   top: 29px;
   right: 28px;
 
+  display: none;
   width: 25px;
   height: 20.512px;
 
@@ -31,6 +32,10 @@
   background-image: url("../img/icon-menu-close.svg");
   background-repeat: no-repeat;
   background-size: 25px 20.512px;
+
+  &--js {
+    display: block;
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -62,6 +67,10 @@
 
   .page-header__menu-toggle {
     display: none;
+
+    &--js {
+      display: none;
+    }
   }
 }
 
@@ -81,7 +90,7 @@
   .page-header__logo {
     order: 1;
 
-    padding: 8px 0px 3px 64px;
+    padding: 8px 0 3px 64px;
   }
 
   .page-header__logo-image {

@@ -1,20 +1,28 @@
+.main-nav {
+  display: none;
+
+  &--opened {
+    display: block;
+  }
+}
+
 .main-nav__additional-links {
   display: none;
 }
 
 @media (min-width: @tablet-width) {
- .main-nav {
+  .main-nav {
     z-index: 1;
     position: absolute;
     top: 80px;
     left: 0;
 
     width: 670px;
- }
+  }
 
- .main-nav__list {
+  .main-nav__list {
     width: auto;
- }
+  }
 }
 
 @media (min-width: @desktop-width) {
