@@ -19,10 +19,14 @@
     min-height: 457px;
     margin-top: 58px;
 
-    background-image: url("../img/review@1x.jpg");
+    background-image: url("../img/review@1x.webp"), url("../img/review@1x.jpg");
     background-repeat: no-repeat;
     background-size: 350px 457px;
     background-position: 0 0;
+
+    @media (min-resolution: @retina-dppx), (min-resolution: @retina-dpi) {
+      background-image: url("../img/review@2x.webp"), url("../img/review@2x.jpg");
+    }
   }
 
   .reviews__title {
@@ -48,7 +52,7 @@
     margin: 0 auto;
     margin-top: 65px;
 
-    background-image: url("../img/review@2x.jpg");
+    background-image: url("../img/review@2x.webp"), url("../img/review@2x.jpg");
   }
 
   .reviews__wrapper {

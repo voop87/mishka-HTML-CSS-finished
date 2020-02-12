@@ -4,69 +4,72 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
   <title>Мишка</title>
 </head>
 <body>
-    <header class="page-header">
-        <div class="page-header__wrapper">
-          <div class="page-header__logo">
-            <a href="index.html">
-              <picture>
-                <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
-                <source media="(min-width: 738px)" srcset="img/logo-tablet.svg">
-                <img class="page-header__logo-image" src="img/logo-mobile.svg" width="85" height="35" alt="Логотип магазина 'Mishka'">
-              </picture>
-            </a>
+  <div style="display: none;">
+    <include src="build/img/sprite.svg"></include>
+  </div>
+  <header class="page-header">
+    <div class="page-header__wrapper">
+      <div class="page-header__logo">
+        <a href="index.html">
+          <picture>
+            <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
+            <source media="(min-width: 738px)" srcset="img/logo-tablet.svg">
+            <img class="page-header__logo-image" src="img/logo-mobile.svg" width="85" height="35" alt="Логотип магазина 'Mishka'">
+          </picture>
+        </a>
+      </div>
+      <button class="page-header__menu-toggle" id="page-header__menu-toggle" onclick="showMenu()" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+      <nav class="main-nav main-nav--opened" id="main-nav">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item">
+            <a class="site-list__link" href="catalog.html">Каталог товаров</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link">Вязание на заказ</a>
+          </li>
+          <li class="site-list__item site-list__info">
+            Бесплатная доставка по России
+          </li>
+        </ul>
+      </nav>
+      <div class="search-and-cart search-and-cart--opened site-list" id="search-and-cart">
+        <form class="search site-list__item">
+          <div class="search__wrapper">
+            <button class="search__btn" type="submit">
+              Поиск по сайту
+              <svg class="search__btn-icon" width="18" height="18">
+                <use xlink:href="img/sprite.svg#icon-search"></use>
+              </svg>
+            </button>
+            <input class="search__input" type="search" id="search" placeholder="Поиск по сайту">
           </div>
-          <button class="page-header__menu-toggle" id="page-header__menu-toggle" onclick="showMenu()" type="button">
-            <span class="visually-hidden">Открыть меню</span>
-          </button>
-          <nav class="main-nav main-nav--opened" id="main-nav">
-            <ul class="main-nav__list site-list">
-              <li class="site-list__item">
-                <a class="site-list__link" href="catalog.html">Каталог товаров</a>
-              </li>
-              <li class="site-list__item">
-                <a class="site-list__link">Вязание на заказ</a>
-              </li>
-              <li class="site-list__item site-list__info">
-                Бесплатная доставка по России
-              </li>
-            </ul>
-          </nav>
-          <div class="search-and-cart search-and-cart--opened site-list" id="search-and-cart">
-            <form class="search site-list__item">
-              <div class="search__wrapper">
-                <button class="search__btn" type="submit">
-                  Поиск по сайту
-                  <svg class="search__btn-icon" width="18" height="18">
-                    <use xlink:href="img/sprite.svg#icon-search"></use>
-                  </svg>
-                </button>
-                <input class="search__input" type="search" id="search" placeholder="Поиск по сайту">
-              </div>
-            </form>
-            <div class="cart site-list__item">
-              <a class="cart__link site-list__link" href="#">
-                <svg class="cart__link-icon" width="24" height="19">
-                  <use xlink:href="img/sprite.svg#icon-cart"></use>
-                </svg>
-                <span class="cart__name">Корзина: </span>
-                <span class="cart__volume">пока пуста</span>
-              </a>
-            </div>
-          </div>
-          <ul class="main-nav__additional-links">
-            <li>
-              <a class="main-nav__additional-link" href="#">Новые поступления</a>
-            </li>
-            <li>
-              <a class="main-nav__additional-link" href="#">Распродажа</a>
-            </li>
-          </ul>
+        </form>
+        <div class="cart site-list__item">
+          <a class="cart__link site-list__link" href="#">
+            <svg class="cart__link-icon" width="24" height="19">
+              <use xlink:href="img/sprite.svg#icon-cart"></use>
+            </svg>
+            <span class="cart__name">Корзина: </span>
+            <span class="cart__volume">пока пуста</span>
+          </a>
         </div>
-      </header>
+      </div>
+      <ul class="main-nav__additional-links">
+        <li>
+          <a class="main-nav__additional-link" href="#">Новые поступления</a>
+        </li>
+        <li>
+          <a class="main-nav__additional-link" href="#">Распродажа</a>
+        </li>
+      </ul>
+    </div>
+  </header>
 
   <main class="page-main">
     <form class="form" action="https://echo.htmlacademy.ru" method="post">
