@@ -69,6 +69,29 @@
   </header>
 
   <main class="page-main">
+    <div class="modal" id="modal">
+      <div class="modal__content">
+        <h2 class="modal__title">Добавить в корзину</h2>
+        <div class="modal__wrapper">
+          <p class="modal__text">Выберите размер:</p>
+          <ul class="modal__size-list">
+            <li>
+              <input class="modal__input visually-hidden" type="radio" name="size" id="size-S" value="size-S" checked>
+              <label class="modal__label" for="size-S">S</label>
+            </li>
+            <li>
+              <input class="modal__input visually-hidden" type="radio" name="size" id="size-M" value="size-M">
+              <label class="modal__label" for="size-M">M</label>
+            </li>
+            <li>
+              <input class="modal__input visually-hidden" type="radio" name="size" id="size-L" value="size-L">
+              <label class="modal__label" for="size-L">L</label>
+            </li>
+          </ul>
+          <button class="btn modal__btn" type="submit">Добавить</button>
+        </div>
+      </div>
+    </div>
     <section class="to-catalog">
       <div class="wrapper">
         <h1 class="to-catalog__title">Милые штуки ручной <span>работы для дома</span></h1>
@@ -130,29 +153,6 @@
           </picture>
           <b class="promo__price">Цена: <span>990&nbsp;руб.</span></b>
           <a class="promo__btn btn" href="#" onclick="showModal()">Заказать</a>
-        </div>
-      </div>
-      <div class="promo__modal modal" id="modal">
-        <div class="modal__content">
-          <h2 class="modal__title">Добавить в корзину</h2>
-          <div class="modal__wrapper">
-            <p class="modal__text">Выберите размер:</p>
-            <ul class="modal__size-list">
-              <li>
-                <input class="modal__input visually-hidden" type="radio" name="size" id="size-S" value="size-S" checked>
-                <label class="modal__label" for="size-S">S</label>
-              </li>
-              <li>
-                <input class="modal__input visually-hidden" type="radio" name="size" id="size-M" value="size-M">
-                <label class="modal__label" for="size-M">M</label>
-              </li>
-              <li>
-                <input class="modal__input visually-hidden" type="radio" name="size" id="size-L" value="size-L">
-                <label class="modal__label" for="size-L">L</label>
-              </li>
-            </ul>
-            <button class="btn modal__btn" type="submit">Добавить</button>
-          </div>
         </div>
       </div>
     </section>

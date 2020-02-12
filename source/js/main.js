@@ -8,6 +8,7 @@ var showMenu = function() {
 
   mainNav.classList.toggle("main-nav--opened");
   searchAndCartMenu.classList.toggle("search-and-cart--opened");
+  closeMenuBtn.classList.toggle("page-header__menu-toggle--closed");
 };
 
 //Показать модальное окно
